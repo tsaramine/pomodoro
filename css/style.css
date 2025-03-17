@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle,#EABDE6,#D69ADE,#AA60C8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal,
+article{
+    background-color: #AA60C8;
+    max-width: 500px;
+    width: 90%;
+    border: #EABDE6 2px solid;
+    box-shadow: 0 0 10px #EABDE6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+}
+article h1:nth-child(2){
+    margin: 30px 0;
+    font-size: 50px;
+}
+.modal button,
+article .button button{
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px black;
+    transition: all 0.3s ease-in-out;
+}
+.modal button:active,
+article .button button:active{
+    padding: 6px 14px;
+    box-shadow: 0 0 3px black;
+    font-size: 16px;
+}
+article .button button:nth-child(1){
+    background-color: #00ff15;
+}
+article .button button:nth-child(2){
+    background-color:red ;
+}
+article .button button:nth-child(3){
+    background-color: rgb(0, 110, 255);
+}
+.modal{
+    margin-bottom: 20px;
+}
+.modal h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.modal button{
+    background-color: gold
+}
+footer{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
